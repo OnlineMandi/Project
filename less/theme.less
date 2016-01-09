@@ -289,3 +289,97 @@
   @shadow: inset 0 1px 3px rgba(0,0,0,.05), 0 1px 0 rgba(255,255,255,.1);
   .box-shadow(@shadow);
 }
+
+
+
+
+
+
+
+
+
+//  custom css code
+
+
+
+*
+{
+  outline:none !important;
+}
+
+body{
+  margin:0;
+  padding:0;
+}
+
+
+a,a:hover
+{
+  text-decoration: none;
+}
+.landing-full-box {
+  background: #010D19 url("../images/landing-bg.jpg") repeat scroll center center / cover ;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+}
+.header {
+  float: left;
+  text-align: center;
+  width: 100%;
+}
+.landing-logo {
+  background: transparent url("../images/logo-bg.png") no-repeat scroll center 0 / 100% auto;
+  display: inline-block;
+  height: 200px;
+  width: 670px;
+}
+.landing-logo a {
+  display: inline-block;
+  margin-left: 15px;
+  margin-top: 36px;
+}
+.landing-logo a img{
+
+}
+.landing-content {
+  float: left;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+}
+.landing-menu {
+  display: inline-block;
+  margin-top: 73px;
+}
+
+.menu1, .menu2 {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+.landing-menu a {
+  display: inline-block;
+  position: inherit;
+  text-decoration: none;
+  margin: 0 200px 0 80px;
+}
+.landing-menu a h1,svg text{
+  font-family: villageregular;
+  font-size: 90px;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(transparent, transparent), url(../images/grd-bg.jpg) repeat center center/cover;
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
+  display: inline-block;
+}
+.landing-menu a h1:hover,svg text:hover{
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(transparent, transparent), url(../images/grd-bg-r.jpg) repeat center center/cover;
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
+}
+svg {
+  height:90px;
+
+}
