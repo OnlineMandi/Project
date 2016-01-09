@@ -596,17 +596,17 @@ a:hover {
   display: inline-block;
   margin-top: 73px;
 }
-.menu1,
-.menu2 {
-  display: inline-block;
-  position: relative;
-  text-align: center;
-}
 .landing-menu a {
   display: inline-block;
   position: inherit;
   text-decoration: none;
   margin: 0 200px 0 80px;
+}
+.menu1,
+.menu2 {
+  display: inline-block;
+  position: relative;
+  text-align: center;
 }
 .landing-menu a h1,
 svg text {
@@ -627,5 +627,79 @@ svg text:hover {
 }
 svg {
   height: 90px;
+}
+@media only screen and (min-width: 0px) and (max-width: 359px) {
+  .landing-menu {
+    margin-top: 23px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .landing-logo {
+    background-size: 100% 166px;
+    height: 160px;
+    width: 100%;
+  }
+  .landing-logo a {
+    margin-top: 28px;
+  }
+  .landing-logo a img {
+    width: 170px;
+  }
+  .menu1,
+  .menu2 {
+    width: 100%;
+  }
+  .landing-menu a h1,
+  svg text {
+    font-size: 60px;
+  }
+  .landing-menu {
+    width: 100%;
+  }
+  .landing-menu a {
+    margin: 0;
+    display: inline-block;
+  }
+}
+@media (min-width: 768px) {
+  .landing-logo {
+    height: 170px;
+    width: 590px;
+  }
+  .landing-logo a {
+    margin-top: 28px;
+  }
+  .landing-menu a {
+    margin: 0 100px 0 50px;
+  }
+  .landing-menu a h1,
+  svg text {
+    font-size: 60px;
+  }
+}
+@media (min-width: 992px) {
+  .landing-menu a {
+    margin: 0 154px 0 50px;
+  }
+  .landing-menu a h1,
+  svg text {
+    font-size: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  .landing-logo {
+    height: 200px;
+    width: 670px;
+  }
+  .landing-logo a {
+    margin-top: 28px;
+  }
+  .landing-menu a {
+    margin: 0 200px 0 80px;
+  }
+  .landing-menu a h1,
+  svg text {
+    font-size: 90px;
+  }
 }
 /*# sourceMappingURL=bootstrap-theme.css.map */
