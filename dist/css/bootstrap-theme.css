@@ -661,6 +661,106 @@ svg {
     display: inline-block;
   }
 }
+.blk-bg {
+  background: black none repeat scroll 0 0;
+}
+.logo {
+  float: left;
+  padding: 7px 0;
+}
+.logo img {
+  width: 156px;
+}
+.header-info {
+  color: red;
+}
+.navbar-box {
+  float: left;
+}
+.navbar-box .navbar-header {
+  display: none;
+}
+.navbar-box .navbar {
+  border: 0 none;
+  margin: 0;
+}
+.navbar-box .navbar-brand {
+  color: red;
+}
+.navbar-box .navbar-header .navbar-toggle {
+  color: red;
+}
+.main-ul {
+  color: red;
+}
+.main-ul li {
+  display: inline-block;
+}
+.main-ul li a {
+  color: #e4e4e4;
+  font-family: Open Sans;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 20px 14px;
+  text-transform: uppercase;
+  transition: all 0.1s ease 0s;
+}
+.main-ul li a:focus,
+.main-ul li a:hover {
+  background: #302D2D;
+}
+.header-rightbox {
+  float: right;
+}
+.header-rightbox ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+.header-rightbox ul li {
+  display: inline-block;
+  margin: 15px 4px;
+}
+.header-rightbox ul li a {
+  background: #383838 none repeat scroll 0 0;
+  border-radius: 20px;
+  color: #fff;
+  display: inline-block;
+  height: 30px;
+  padding: 6px;
+  width: 30px;
+  transition: all 0.3s ease 0s;
+}
+.header-rightbox ul li a:hover {
+  background: #da2c2a none repeat scroll 0 0;
+}
+.cart-btn {
+  background: #2a2a2a none repeat scroll 0 0;
+  float: right;
+  height: 60px;
+  margin-left: 23px;
+  padding: 10px 0;
+  width: 150px;
+}
+.cart-btn span {
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 2px;
+}
+.cart-btn span b {
+  color: #fff;
+}
+.cart-btn span i {
+  color: #da2c2a;
+  font-style: normal;
+}
+.cart-btn p {
+  color: #fff;
+  font-family: verdana;
+  font-size: 13px;
+}
+/* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .landing-logo {
     height: 170px;
@@ -677,6 +777,7 @@ svg {
     font-size: 60px;
   }
 }
+/* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .landing-menu a {
     margin: 0 154px 0 50px;
@@ -686,6 +787,7 @@ svg {
     font-size: 70px;
   }
 }
+/* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .landing-logo {
     height: 200px;

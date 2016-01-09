@@ -432,9 +432,117 @@ svg {
 }
 
 
+.blk-bg {
+  background: black none repeat scroll 0 0;
+}
+.logo {
+  float: left;
+  padding: 7px 0;
+}
+.logo img {
+  width: 156px;
+}
+.header-info{
+  color:red;
+}
+.navbar-box{
+  float: left;
+}
+.navbar-box .navbar-header {
+  display: none;
+}
+.navbar-box .navbar {
+  border: 0 none;
+  margin: 0;
+}
+.navbar-box .navbar-brand
+{
+  color:red;
 
+}
+.navbar-box .navbar-header .navbar-toggle
+{
 
-@media (min-width: 768px) {
+  color:red;
+}
+.main-ul
+{
+  color:red;
+  li {
+    display: inline-block;
+    a {
+        color: #e4e4e4;
+        font-family: Open Sans;
+        font-size: 13px;
+        font-weight: 600;
+        padding: 20px 14px;
+        text-transform: uppercase;
+        transition: all 0.1s ease 0s;
+        &:focus, &:hover {
+          background: #302D2D;
+        }
+    }
+  }
+}
+.header-rightbox {
+  float: right;
+}
+
+.header-rightbox ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+  float:right;
+
+  li {
+    display: inline-block;
+    margin: 15px 4px;
+
+    a{
+      background: #383838 none repeat scroll 0 0;
+      border-radius: 20px;
+      color: #fff;
+      display: inline-block;
+      height: 30px;
+      padding: 6px;
+      width: 30px;
+      transition: all 0.3s ease 0s;
+
+      &:hover{
+        background: #da2c2a none repeat scroll 0 0;
+      }
+    }
+  }
+}
+.cart-btn {
+  background: #2a2a2a none repeat scroll 0 0;
+  float: right;
+  height: 60px;
+  margin-left: 23px;
+  padding: 10px 0;
+  width: 150px;
+
+  span {
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 2px;
+
+    b{
+      color:#fff;
+    }
+    i {
+      color: #da2c2a;
+      font-style: normal;
+    }
+  }
+  p {
+    color: #fff;
+    font-family: verdana;
+    font-size: 13px;
+  }
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {
   .landing-logo {
     height: 170px;
     width: 590px;
@@ -450,7 +558,10 @@ svg {
   }
 }
 
-@media (min-width: 992px) {
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {
 
   .landing-menu a {
     margin: 0 154px 0 50px;
@@ -459,7 +570,11 @@ svg {
     font-size: 70px;
   }
 }
-@media (min-width: 1200px) {
+
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {
   .landing-logo {
     height: 200px;
     width: 670px;

@@ -1,157 +1,24 @@
-/**
- * Magento
- *
- * @category    design
- * @package     meigeetheme_default
- * @copyright   Copyright (c) 2012 MeigeeTeam. (http://www.meigeeteam.com)
- * @template_version    1.0
- */
-
-/* Reset ================================================================================= */
-
 @font-face {
-    font-family: 'latobold';
-    src: url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/lato-bold-webfont.eot');
-    src: url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/lato-bold-webfont.eot?#iefix') format('embedded-opentype'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/lato-bold-webfont.woff') format('woff'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/lato-bold-webfont.ttf') format('truetype'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/lato-bold-webfont.svg#latobold') format('svg');
-    font-weight: normal;
+    font-family: 'Open Sans';
     font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
 }
-@font-face { font-family: 'latoregular';
-    src: url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/lato-regular-webfont.eot');
-    src: url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/lato-regular-webfont.woff') format('woff'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/lato-regular-webfont.ttf') format('truetype'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/lato-regular-webfont.svg#latoregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face { font-family: 'latolight';
-    src: url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/lato-light-webfont.eot');
-    src: url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/lato-light-webfont.eot?#iefix') format('embedded-opentype'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/lato-light-webfont.woff') format('woff'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/lato-light-webfont.ttf') format('truetype'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/lato-light-webfont.svg#latolight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face { font-family: 'latoheavy';
-    src: url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/lato-heavy-webfont.eot');
-    src: url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/lato-heavy-webfont.eot?#iefix') format('embedded-opentype'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/lato-heavy-webfont.woff') format('woff'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/lato-heavy-webfont.ttf') format('truetype'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/lato-heavy-webfont.svg#latoheavy') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face { font-family: 'latosemibold';
-    src: url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/lato-semibold-webfont.eot');
-    src: url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/lato-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/lato-semibold-webfont.woff') format('woff'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/lato-semibold-webfont.ttf') format('truetype'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/lato-semibold-webfont.svg#latosemibold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face { font-family: 'latomedium';
-    src: url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/lato-medium-webfont.eot');
-    src: url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/lato-medium-webfont.eot?#iefix') format('embedded-opentype'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/lato-medium-webfont.woff') format('woff'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/lato-medium-webfont.ttf') format('truetype'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/lato-medium-webfont.svg#latomedium') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face { font-family: 'villageregular';
-    src: url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/village-webfont.eot');
-    src: url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/village-webfont.eot?#iefix') format('embedded-opentype'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/village-webfont.woff') format('woff'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/village-webfont.ttf') format('truetype'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/village-webfont.svg#villageregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face { font-family: 'coolveticaregular';
-    src: url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/coolveti-webfont.eot');
-    src: url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/coolveti-webfont.eot?#iefix') format('embedded-opentype'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/coolveti-webfont.woff') format('woff'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/coolveti-webfont.ttf') format('truetype'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/coolveti-webfont.svg#coolveticaregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face { font-family: 'latothin';
-    src: url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/lato-thin-webfont.eot');
-    src: url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/lato-thin-webfont.eot?#iefix') format('embedded-opentype'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/lato-thin-webfont.woff') format('woff'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/lato-thin-webfont.ttf') format('truetype'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/lato-thin-webfont.svg#latothin') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face { font-family: 'pacificitalicregular';
-    src: url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/pacificitalic-webfont.eot');
-    src: url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/pacificitalic-webfont.eot?#iefix') format('embedded-opentype'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/pacificitalic-webfont.woff') format('woff'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/pacificitalic-webfont.ttf') format('truetype'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/pacificitalic-webfont.svg#pacificitalicregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face { font-family: 'pacificregular';
-    src: url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/pacific-webfont.eot');
-    src: url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/pacific-webfont.eot?#iefix') format('embedded-opentype'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/pacific-webfont.woff') format('woff'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/pacific-webfont.ttf') format('truetype'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/pacific-webfont.svg#pacificregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face { font-family: 'berthold_akzidenz_grotesk_bBd';
-    src: url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/berthold_akzidenz_grotesk_be_bold-webfont.eot');
-    src: url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/berthold_akzidenz_grotesk_be_bold-webfont.eot?#iefix') format('embedded-opentype'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/berthold_akzidenz_grotesk_be_bold-webfont.woff') format('woff'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/berthold_akzidenz_grotesk_be_bold-webfont.ttf') format('truetype'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/berthold_akzidenz_grotesk_be_bold-webfont.svg#berthold_akzidenz_grotesk_bBd') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face { font-family: 'book_antiquaregular';
-    src: url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/bkant_0-webfont.eot');
-    src: url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/bkant_0-webfont.eot?#iefix') format('embedded-opentype'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/bkant_0-webfont.woff') format('woff'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/bkant_0-webfont.ttf') format('truetype'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/bkant_0-webfont.svg#book_antiquaregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face { font-family: 'book_antiquaregular';
-    src: url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/bkant_0-webfont.eot');
-    src: url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/bkant_0-webfont.eot?#iefix') format('embedded-opentype'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/bkant_0-webfont.woff') format('woff'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/bkant_0-webfont.ttf') format('truetype'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/bkant_0-webfont.svg#book_antiquaregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face { font-family: 'book_antiquabold';
-    src: url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/antquab_0-webfont.eot');
-    src: url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/antquab_0-webfont.eot?#iefix') format('embedded-opentype'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/antquab_0-webfont.woff') format('woff'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/antquab_0-webfont.ttf') format('truetype'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/antquab_0-webfont.svg#book_antiquabold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
 @font-face {
-    font-family: 'OpenSans';
-    src: url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/OpenSans.eot?#iefix') format('embedded-opentype'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/OpenSans.woff') format('woff'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/OpenSans.ttf')  format('truetype'),
-    url('http://closera.com/skin/frontend/bizarre/skin2_new/fonts/OpenSans.svg#OpenSans') format('svg');
-    font-weight: normal;
+    font-family: 'Open Sans';
     font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSugdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url(https://fonts.gstatic.com/s/opensans/v13/EInbV5DfGHOiMmvb1Xr-hugdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
 }
