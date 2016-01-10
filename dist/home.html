@@ -16,6 +16,9 @@
 
     <link href="css/bootstrap-theme.css" rel="stylesheet">
 
+    <link href="css/jquery.bxslider.css" rel="stylesheet">
+
+
     <!--page css and js-->
 
 
@@ -32,7 +35,7 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="logo">
-                        <img src="images/logo.png" />
+                        <a href"#"><img src="images/logo.png" /></a>
                     </div>
                     <div class="navbar-box">
                         <nav class="navbar">
@@ -45,7 +48,6 @@
                                 </button>
                                 <a class="navbar-brand" href="#">Brand</a>
                             </div>
-
                             <!-- Collect the nav links, forms, and other content for toggling -->
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                 <ul class="nav navbar-nav main-ul">
@@ -62,7 +64,6 @@
                 </div>
                 <div class="col-md-4">
                     <div class="header-rightbox">
-
                         <div class="cart-btn">
                             <span><b>Cart - </b><i>Rs 0.00</i></span>
                             <p>0 item(s) in cart</p>
@@ -78,21 +79,30 @@
                                 <a href="#"><i class="icon-key"></i></a>
                             </li>
                         </ul>
-
                     </div>
                 </div>
             </div>
         </div>
     </header>
-
+    <section class="main-slider">
+        <ul class="bxslider">
+            <li><img src="images/Banner-1.jpg" /></li>
+            <li><img src="images/Banner-2.jpg" /></li>
+            <li><img src="images/Banner-3.jpg" /></li>
+            <li><img src="images/Banner-4.jpg" /></li>
+        </ul>
+    </section>
 <!--page js and css-->
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
 
+<script src="js/jquery.bxslider.min.js"></script>
 
 <script src="js/custom.js"></script>
+
+
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 </body>
