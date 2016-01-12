@@ -17,5 +17,12 @@ $(document).ready(function(){
             prevText: ''
         });
 
+
+        $(".left-list li").mouseover(function(){
+            $(".left-list li").removeClass("active");
+            $(this).addClass("active");
+
+        });
+
 });
 

@@ -419,19 +419,20 @@ svg {
 }
 .navbar-box .navbar-brand
 {
-  color:red;
+ display:none;
 
 }
 .navbar-box .navbar-header .navbar-toggle
 {
 
-  color:red;
+
 }
 .main-ul
 {
-  color:red;
+  position:relative;
   li {
     display: inline-block;
+    position:static;
     a {
         color: #e4e4e4;
         font-family: Open Sans;
@@ -555,9 +556,8 @@ svg {
       left: 0;
       .bxslider
       {
-        color:red;
         li{
-          color:red;
+
           img{
            width:100%;
 
@@ -567,7 +567,86 @@ svg {
     }
   }
 }
+.sub-menu
+{
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 0 7px -1px #7a7a7a;
+  height: 320px;
+  left: -10%;
+  position: absolute;
+  width: 170%;
+  z-index: 999;
 
+  ul.left-list{
+    background: #f2f2f2 none repeat scroll 0 0;
+    height: 100%;
+    padding: 10px 0;
+    width: 26%;
+    float:left;
+
+    li{
+        display: inline-block;
+        text-align: left;
+        width: 100%;
+        &.active{
+          a{
+            background: #da2c2a none repeat scroll 0 0;
+            color: #fff;
+            position: relative;
+
+            &::before{
+              border-color: transparent #da2c2a;
+              border-style: solid;
+              border-width: 18px 0 17px 16px;
+              content: "";
+              position: absolute;
+              right: -16px;
+              top: 0;
+            }
+          }
+        }
+      a{
+        color: #000;
+        display: inline-block;
+        padding: 8px 12px;
+        width: 100%;
+        transition: all 0s ease 0s;
+        &:hover{
+          background:#DA2C2A;
+          color:#fff;
+        }
+      }
+    }
+  }
+  .right-list{
+    float: left;
+    height: 100%;
+    position: relative;
+    width: 74%;
+
+    .right-menu-list{
+      display: none;
+      height: 100%;
+      padding: 10px 15px;
+      position: absolute;
+      width: 100%;
+      ul{
+        padding: 0;
+        width: 67%;
+
+        li{
+          color:red;
+          a{
+            color:red;
+          }
+        }
+      }
+      img{
+        color:red;
+      }
+    }
+  }
+}
 
 
 

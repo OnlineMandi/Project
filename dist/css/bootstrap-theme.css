@@ -653,16 +653,14 @@ svg {
   margin: 0;
 }
 .navbar-box .navbar-brand {
-  color: red;
-}
-.navbar-box .navbar-header .navbar-toggle {
-  color: red;
+  display: none;
 }
 .main-ul {
-  color: red;
+  position: relative;
 }
 .main-ul li {
   display: inline-block;
+  position: static;
 }
 .main-ul li a {
   color: #e4e4e4;
@@ -774,14 +772,80 @@ svg {
   box-shadow: 0 0 0;
   left: 0;
 }
-.main-slider .bx-wrapper .bx-viewport .bxslider {
-  color: red;
-}
-.main-slider .bx-wrapper .bx-viewport .bxslider li {
-  color: red;
-}
 .main-slider .bx-wrapper .bx-viewport .bxslider li img {
   width: 100%;
+}
+.sub-menu {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 0 7px -1px #7a7a7a;
+  height: 320px;
+  left: -10%;
+  position: absolute;
+  width: 170%;
+  z-index: 999;
+}
+.sub-menu ul.left-list {
+  background: #f2f2f2 none repeat scroll 0 0;
+  height: 100%;
+  padding: 10px 0;
+  width: 26%;
+  float: left;
+}
+.sub-menu ul.left-list li {
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+}
+.sub-menu ul.left-list li.active a {
+  background: #da2c2a none repeat scroll 0 0;
+  color: #fff;
+  position: relative;
+}
+.sub-menu ul.left-list li.active a::before {
+  border-color: transparent #da2c2a;
+  border-style: solid;
+  border-width: 18px 0 17px 16px;
+  content: "";
+  position: absolute;
+  right: -16px;
+  top: 0;
+}
+.sub-menu ul.left-list li a {
+  color: #000;
+  display: inline-block;
+  padding: 8px 12px;
+  width: 100%;
+  transition: all 0s ease 0s;
+}
+.sub-menu ul.left-list li a:hover {
+  background: #DA2C2A;
+  color: #fff;
+}
+.sub-menu .right-list {
+  float: left;
+  height: 100%;
+  position: relative;
+  width: 74%;
+}
+.sub-menu .right-list .right-menu-list {
+  display: none;
+  height: 100%;
+  padding: 10px 15px;
+  position: absolute;
+  width: 100%;
+}
+.sub-menu .right-list .right-menu-list ul {
+  padding: 0;
+  width: 67%;
+}
+.sub-menu .right-list .right-menu-list ul li {
+  color: red;
+}
+.sub-menu .right-list .right-menu-list ul li a {
+  color: red;
+}
+.sub-menu .right-list .right-menu-list img {
+  color: red;
 }
 @media only screen and (min-width: 0px) and (max-width: 359px) {
   .landing-menu {
