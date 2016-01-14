@@ -864,7 +864,7 @@ svg {
   position: absolute;
   right: 0;
   top: 0;
-  width: 42%;
+  height: 100%;
 }
 @media only screen and (min-width: 0px) and (max-width: 359px) {
   .landing-menu {
