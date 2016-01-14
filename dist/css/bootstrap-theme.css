@@ -781,8 +781,11 @@ svg {
   height: 320px;
   left: -10%;
   position: absolute;
+  top: 150%;
+  transition: top 0.4s ease 0s;
   width: 170%;
   z-index: 999;
+  display: none;
 }
 .sub-menu ul.left-list {
   background: #f2f2f2 none repeat scroll 0 0;
@@ -830,22 +833,38 @@ svg {
 .sub-menu .right-list .right-menu-list {
   display: none;
   height: 100%;
-  padding: 10px 15px;
+  overflow: hidden;
+  padding: 20px 26px;
   position: absolute;
   width: 100%;
 }
 .sub-menu .right-list .right-menu-list ul {
+  float: left;
   padding: 0;
-  width: 67%;
+  width: 30%;
 }
 .sub-menu .right-list .right-menu-list ul li {
-  color: red;
+  display: inline-block;
+  margin-bottom: 3px;
+  text-align: left;
+  width: 100%;
 }
 .sub-menu .right-list .right-menu-list ul li a {
-  color: red;
+  color: #4a4a4a;
+  display: inline-block;
+  padding: 3px 2px;
+  text-transform: capitalize;
+}
+.sub-menu .right-list .right-menu-list ul li a:hover,
+.sub-menu .right-list .right-menu-list ul li a:focus {
+  background: transparent;
+  color: #000;
 }
 .sub-menu .right-list .right-menu-list img {
-  color: red;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 42%;
 }
 @media only screen and (min-width: 0px) and (max-width: 359px) {
   .landing-menu {
