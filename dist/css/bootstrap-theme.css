@@ -3,6 +3,31 @@
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+.block,
+.main-slider,
+.full-search-box,
+.search-box,
+.bg-colored,
+.carousel-sellers,
+.carousel-sellers-item,
+.ptn-full-box,
+.product-list,
+.product-item,
+.product-item .brands,
+.product-item .pro-item-head,
+.product-item .pro-item-img,
+.product-item .ftp {
+  width: 100%;
+  float: left;
+}
+.transition,
+.social-icons a {
+  -o-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
 .btn-default,
 .btn-primary,
 .btn-success,
@@ -559,11 +584,15 @@ fieldset[disabled] .btn-danger.active {
 body {
   margin: 0;
   padding: 0;
+  font-family: 'open sans', arial;
 }
 a,
 a:focus,
 a:hover {
   text-decoration: none;
+}
+ul {
+  list-style-type: none;
 }
 .landing-full-box {
   background: #010D19 url("../images/landing-bg.jpg") repeat scroll center center / cover;
@@ -729,8 +758,10 @@ svg {
   font-size: 12px;
 }
 .main-slider {
-  float: left;
-  width: 100%;
+  border-bottom: 4px solid #e0e0e0;
+}
+.main-slider .bx-wrapper {
+  margin: 0;
 }
 .main-slider .bx-wrapper .bx-controls-direction a {
   background: #fff none repeat scroll 0 0;
@@ -866,6 +897,210 @@ svg {
   top: 0;
   height: 100%;
 }
+.search-box {
+  padding: 30px 0;
+}
+.search-box form fieldset {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  width: 360px;
+}
+.search-box form fieldset input {
+  border: medium none;
+  border-radius: 7px;
+  padding: 10px 50px 10px 10px;
+  width: 100%;
+}
+.search-box form fieldset button {
+  background: red none repeat scroll 0 0;
+  border: medium none;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  width: 40px;
+}
+.social-icons {
+  float: right;
+  padding: 35px 0;
+}
+.social-icons a {
+  background: #e7e7e7 none repeat scroll 0 0;
+  border-radius: 20px;
+  color: #000;
+  display: inline-block;
+  font-size: 15px;
+  height: 32px;
+  margin-right: 8px;
+  padding: 6px;
+  text-align: center;
+  width: 32px;
+}
+.social-icons a:hover {
+  background: #DA2C2A;
+  color: #fff;
+}
+.bg-colored {
+  background: #5a6768 none repeat scroll 0 0;
+  padding: 30px 0 60px;
+}
+.head-2 {
+  background: transparent url("../images/Separator-wt.png") no-repeat scroll center bottom;
+  color: #fff;
+  font-family: open sans;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 0 30px;
+  padding-bottom: 32px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.head-2.wt {
+  background: transparent url("../images/Separator.png") no-repeat scroll center bottom;
+  color: #505050;
+}
+.carousel-sellers {
+  color: red;
+}
+.carousel-sellers .bx-wrapper {
+  margin: 0;
+}
+.carousel-sellers .bx-wrapper .bx-viewport {
+  background: transparent none repeat scroll 0 0;
+  border: 0 none;
+  box-shadow: 0 0 0;
+  left: 0;
+}
+.carousel-sellers-item {
+  background: #fff none repeat scroll 0 0;
+}
+.carousel-sellers-item .cl-head {
+  border-bottom: 1px solid #ebebeb;
+  padding: 12px;
+}
+.carousel-sellers-item .cl-head img {
+  border-radius: 40px;
+  float: left;
+  margin-right: 12px;
+  width: 42px;
+}
+.carousel-sellers-item .cl-head h3 {
+  font-size: 16px;
+  margin: 1px 0 0;
+  color: #da2c2a;
+}
+.carousel-sellers-item .cl-head span {
+  color: #306889;
+  font-size: 12px;
+}
+.carousel-sellers-item .cl-body {
+  height: 280px;
+  padding: 12px;
+  width: 100%;
+  position: relative;
+}
+.carousel-sellers-item .cl-body a {
+  background: #f7f7f7 none repeat scroll 0 0;
+  overflow: hidden;
+  position: absolute;
+}
+.carousel-sellers-item .cl-body a .img {
+  width: 100%;
+}
+.carousel-sellers-item .cl-body a:nth-child(1) {
+  height: 50.2%;
+  left: 2%;
+  top: 2%;
+  width: 47%;
+}
+.carousel-sellers-item .cl-body a:nth-child(2) {
+  height: 44.2%;
+  right: 2%;
+  top: 2%;
+  width: 47%;
+}
+.carousel-sellers-item .cl-body a:nth-child(3) {
+  height: 44%;
+  left: 2%;
+  bottom: 2%;
+  width: 47%;
+}
+.carousel-sellers-item .cl-body a:nth-child(4) {
+  height: 50%;
+  right: 2%;
+  bottom: 2%;
+  width: 47%;
+}
+.ptn-full-box {
+  background: #fff url("../images/bgcol_2.png") repeat scroll 0 0;
+  padding: 30px 0;
+}
+.product-list ul {
+  margin: 0 -12px;
+  padding: 0;
+}
+.product-list ul li {
+  float: left;
+  padding: 12px;
+  width: 25%;
+}
+.product-item {
+  background: #ffffff none repeat scroll 0 0;
+  box-shadow: 0 0 3px -1px rgba(0, 0, 0, 0.4);
+}
+.product-item .brands {
+  background: #da2c2a none repeat scroll 0 0;
+  color: #fff;
+  padding: 7px 6px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: lato;
+}
+.product-item .pro-name {
+  display: inline-block;
+  font-family: Verdana;
+  font-size: 13px;
+  margin: 5px 0 0;
+  text-align: center;
+  width: 100%;
+}
+.product-item .pro-item-head {
+  font-family: verdana;
+  font-size: 13px;
+  padding: 9px;
+}
+.product-item .pro-item-head img {
+  border-radius: 25px;
+  margin-right: 4px;
+  width: 42px;
+}
+.product-item .pro-item-head .rating {
+  float: right;
+  height: 42px;
+  padding: 10px 0;
+  width: 50%;
+}
+.product-item .pro-item-img {
+  height: 300px;
+  overflow: hidden;
+}
+.product-item .pro-item-img img {
+  width: 100%;
+}
+.product-item .ftp {
+  color: #535353;
+  font-family: lato;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0;
+  padding: 9px 11px;
+}
+.product-item .ftp span {
+  float: right;
+}
+/* Small devices (Mobile, 320px and 668) */
 @media only screen and (min-width: 0px) and (max-width: 359px) {
   .landing-menu {
     margin-top: 23px;

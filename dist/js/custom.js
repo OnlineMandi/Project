@@ -16,7 +16,16 @@ $(document).ready(function(){
             nextText: '',
             prevText: ''
         });
-
+        $('.bxslider-sellers').bxSlider({
+            minSlides: 1,
+            maxSlides: 4,
+            moveSlides:1,
+            slideWidth: 262,
+            slideMargin: 30,
+            auto: true,
+            autoControls: true,
+            pager:false
+        });
 
         $(".main-ul>li").hover(function(){
             $(this).children(".sub-menu").stop(true,false).fadeIn().css("top","100%");
