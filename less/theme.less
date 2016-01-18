@@ -331,10 +331,14 @@ ul{
   width: 100%;
 }
 .header {
-  float: left;
-  text-align: center;
-  width: 100%;
-}
+  &:extend(.block);
+   position: fixed;
+   text-align: center;
+   top: 0;
+   z-index: 99999;
+
+
+ }
 .landing-logo {
   background: transparent url("../images/logo-bg.png") no-repeat scroll center 0 / 100% auto;
   display: inline-block;
@@ -347,7 +351,24 @@ ul{
     margin-top: 36px;
   }
 }
+.sub-menu.sub-menu-brande
+{
+  height: inherit;
+  padding: 25px;
+  text-align: left;
+  a{
+    display: inline-block;
+    padding: 11px 16px;
+    text-align:center;
+    &:hover{
+      backgrund:#aaa;
+    }
 
+    img{
+      max-width: 100%;
+    }
+  }
+}
 .landing-content {
   float: left;
   margin-top: 10px;
@@ -406,10 +427,12 @@ svg {
 }
 .logo {
   float: left;
-  padding: 7px 0;
+  height: 60px;
+  padding: 10px 0;
+  width: 156px;
 }
 .logo img {
-  width: 156px;
+  width: 100%;
 }
 .header-info{
   color:red;
@@ -434,6 +457,10 @@ svg {
 
 
 }
+.header-bg {
+  height: 40px;
+  position: relative;
+}
 .main-ul
 {
   position:relative;
@@ -448,8 +475,11 @@ svg {
         padding: 20px 14px;
         text-transform: uppercase;
         transition: all 0.1s ease 0s;
-        &:focus, &:hover {
+        &:hover {
           background: #302D2D;
+        }
+        &:focus{
+          background: transparent;
         }
     }
   }
@@ -477,7 +507,6 @@ svg {
       padding: 6px;
       width: 30px;
       transition: all 0.3s ease 0s;
-
       &:hover{
         background: #da2c2a none repeat scroll 0 0;
       }
@@ -578,7 +607,6 @@ svg {
 {
   background: #fff none repeat scroll 0 0;
   box-shadow: 0 0 7px -1px #7a7a7a;
-  height: 320px;
   left: -10%;
   position: absolute;
   top: 150%;
@@ -702,9 +730,10 @@ svg {
       border-radius: 7px;
       padding: 10px 50px 10px 10px;
       width: 100%;
+      background: #f1f1f1 none repeat scroll 0 0;
     }
     button{
-      background: red none repeat scroll 0 0;
+      background: transparent none repeat scroll 0 0;
       border: medium none;
       height: 40px;
       position: absolute;
@@ -738,7 +767,7 @@ svg {
 .bg-colored
 {
   background: #5a6768 none repeat scroll 0 0;
-  padding: 30px 0 60px;
+  padding: 50px 0 60px;
   &:extend(.block);
 
 }
@@ -762,8 +791,22 @@ svg {
 
 
 .carousel-sellers {
-  color: red;
+  .bx-wrapper .bx-controls-direction {
+    a{
 
+      height: 44px;
+      width: 30px;
+
+      &.bx-prev{
+        background: transparent url("../images/pic17.png") no-repeat scroll 0 0;
+        left: -40px;
+      }
+      &.bx-next{
+        background: transparent url("../images/pic16.png") no-repeat scroll 0 0;
+        right: -40px;
+      }
+    }
+   }
   &:extend(.block);
 
   .bx-wrapper {
@@ -896,10 +939,11 @@ svg {
       width: 42px;
     }
     .rating{
-      float: right;
-      height: 42px;
-      padding: 10px 0;
-      width: 50%;
+     background: transparent url("../images/Two-star-rating.png") no-repeat scroll right 11px / 63% auto;
+     float: right;
+     height: 42px;
+     padding: 10px 0;
+     width: 50%;
     }
   }
   .pro-item-img
@@ -925,14 +969,56 @@ svg {
     }
   }
 }
+.footer {
+  background: #1c1e1d none repeat scroll 0 0;
+  padding: 30px 0;
+  text-align: center;
+  &:extend(.block);
+  img
+  {
+    margin: 33px 0 20px;
+  }
 
-
-
-
-
-
-
-
+  span{
+    color: #6a6a6a;
+    display: inline-block;
+    width: 100%;
+  }
+  h6{
+    color: #fff;
+    font-family: lato;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    margin-right: 7px;
+    text-transform: uppercase;
+  }
+  .social-icons
+  {
+    padding: 28px 0;
+    width: 100%;
+    a{
+      font-size: 18px;
+      height: 36px;
+      width: 36px;
+    }
+  }
+  .footer-nav
+  {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    a{
+      color: #afafaf;
+      font-size: 13px;
+      margin-right: 15px;
+      text-transform: capitalize;
+    }
+    a:hover{
+      color:#fff;
+    }
+  }
+}
 
 
 
@@ -959,6 +1045,8 @@ svg {
     margin-top: 23px;
   }
 }
+
+
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
 
@@ -1017,6 +1105,31 @@ svg {
   .landing-menu a h1, svg text {
     font-size: 70px;
   }
+  .main-ul li a {
+    font-size: 12px;
+    padding: 20px 12px;
+  }
+  .logo {
+    width: 132px;
+  }
+  .cart-btn {
+    width: 140px;
+  }
+  .carousel-sellers{
+    padding:0 25px;
+  }
+  .bxslider-sellers li ,.bxslider-sellers-sd li{
+    width:276px !important;
+  }
+  .product-item .pro-item-img {
+    height: 260px;
+  }
+  .sub-menu {
+    width: 150%;
+  }
+  .sub-menu.sub-menu-brande a {
+    width: 19%;
+  }
 }
 
 
@@ -1036,5 +1149,27 @@ svg {
   }
   .landing-menu a h1, svg text {
     font-size: 90px;
+  }
+  .main-ul li a {
+    font-size: 13px;
+    padding: 20px 14px;
+  }
+  .logo {
+    width: 156px;
+  }
+  .cart-btn {
+    width: 150px;
+  }
+  .bxslider-sellers li, .bxslider-sellers-sd li {
+    width:262px !important;
+  }
+  .carousel-sellers{
+    padding:0;
+  }
+  .product-item .pro-item-img{
+    height: 300px;
+  }
+  .sub-menu {
+    width: 170%;
   }
 }

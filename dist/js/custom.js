@@ -9,6 +9,16 @@ $(document).ready(function(){
            $(this).css("fill","url('#mypattern') none");
        });
 
+        function stopnav(){
+            var high = $(".header").height();
+            $("<div class='header-bg'></div>").css("height",high).insertBefore(".header");
+
+            var hight = $(".sub-menu").height();
+            $(".right-list").css("height",hight);
+        }
+        stopnav();
+
+
 
         $('.bxslider').bxSlider({
             auto: true,
@@ -26,6 +36,16 @@ $(document).ready(function(){
             autoControls: true,
             pager:false
         });
+        $('.bxslider-sellers-sd').bxSlider({
+             minSlides: 1,
+             maxSlides: 4,
+             moveSlides:1,
+             slideWidth: 262,
+             slideMargin: 30,
+             auto: true,
+             autoControls: true,
+             pager:false
+         });
 
         $(".main-ul>li").hover(function(){
             $(this).children(".sub-menu").stop(true,false).fadeIn().css("top","100%");
