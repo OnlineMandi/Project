@@ -1256,6 +1256,22 @@ svg {
   .sub-menu .right-list .right-menu-list ul {
     width: 32%;
   }
+  .search-box form fieldset {
+    width: 300px;
+  }
+  .bxslider-sellers li,
+  .bxslider-sellers-sd li {
+    width: 277px !important;
+  }
+  .carousel-sellers {
+    padding: 0 66px;
+  }
+  .product-list ul li {
+    width: 33%;
+  }
+  .product-item .pro-item-img {
+    height: 260px;
+  }
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -1307,6 +1323,12 @@ svg {
   }
   .sub-menu .right-list .right-menu-list ul {
     width: 32%;
+  }
+  .search-box form fieldset {
+    width: 360px;
+  }
+  .product-list ul li {
+    width: 25%;
   }
 }
 /* Large devices (large desktops, 1200px and up) */
