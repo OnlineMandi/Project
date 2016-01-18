@@ -1232,6 +1232,30 @@ svg {
   svg text {
     font-size: 60px;
   }
+  .cart-btn {
+    height: 50px;
+    padding: 5px 0;
+  }
+  .header-rightbox ul li {
+    margin: 10px 4px;
+  }
+  .logo {
+    height: 50px;
+    padding: 0;
+  }
+  .main-ul li a {
+    padding: 10px 14px;
+  }
+  .navbar {
+    min-height: inherit;
+  }
+  .sub-menu {
+    left: -5%;
+    width: 140%;
+  }
+  .sub-menu .right-list .right-menu-list ul {
+    width: 32%;
+  }
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -1248,6 +1272,8 @@ svg {
   }
   .logo {
     width: 132px;
+    height: 60px;
+    padding: 10px 0;
   }
   .cart-btn {
     width: 140px;
@@ -1264,9 +1290,23 @@ svg {
   }
   .sub-menu {
     width: 150%;
+    left: -10%;
   }
   .sub-menu.sub-menu-brande a {
     width: 19%;
+  }
+  .cart-btn {
+    height: 60px;
+    padding: 10px 0;
+  }
+  .header-rightbox ul li {
+    margin: 15px 4px;
+  }
+  .navbar {
+    min-height: 50px;
+  }
+  .sub-menu .right-list .right-menu-list ul {
+    width: 32%;
   }
 }
 /* Large devices (large desktops, 1200px and up) */
