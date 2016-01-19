@@ -684,7 +684,8 @@ svg {
   float: left;
   height: 60px;
   padding: 10px 0;
-  width: 156px;
+  width: 140px;
+  margin-left: 12px;
 }
 .logo img {
   width: 100%;
@@ -704,6 +705,21 @@ svg {
 }
 .navbar-box .navbar-brand {
   display: none;
+}
+.navbar-toggle {
+  border-right: 1px solid #3a3a3a;
+  float: left;
+  margin: 0;
+  padding: 13px 10px;
+  width: 50px;
+}
+.navbar-toggle span.icon-bar {
+  background: #d9d9d9 none repeat scroll 0 0;
+  float: left;
+  font-family: arial;
+  height: 1px;
+  margin-bottom: 2px;
+  width: 25px;
 }
 .header-bg {
   height: 40px;
@@ -1182,6 +1198,17 @@ svg {
 .footer .footer-nav a:hover {
   color: #fff;
 }
+.cart-btn-mobi {
+  border-left: 1px solid #3a3a3a;
+  float: right;
+  padding: 6px 7px;
+}
+.cart-btn-mobi span {
+  color: #9f9f9f;
+  display: inline-block;
+  font-size: 21px;
+  padding: 6px 6px 7px;
+}
 /* Small devices (Mobile, 320px and 668) */
 @media only screen and (min-width: 0px) and (max-width: 359px) {
   .landing-menu {
@@ -1215,6 +1242,20 @@ svg {
     margin: 0;
     display: inline-block;
   }
+  .logo {
+    height: 46px;
+    padding: 6px 0;
+    width: 116px;
+  }
+  .header-rightbox ul {
+    display: none;
+  }
+  .cart-btn {
+    display: none;
+  }
+  .navbar-box {
+    display: none;
+  }
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -1242,6 +1283,7 @@ svg {
   .logo {
     height: 50px;
     padding: 0;
+    margin-left: 20px;
   }
   .main-ul li a {
     padding: 10px 14px;
@@ -1290,6 +1332,7 @@ svg {
     width: 132px;
     height: 60px;
     padding: 10px 0;
+    margin-left: 12px;
   }
   .cart-btn {
     width: 140px;
@@ -1352,7 +1395,7 @@ svg {
     padding: 20px 14px;
   }
   .logo {
-    width: 156px;
+    width: 140px;
   }
   .cart-btn {
     width: 150px;
