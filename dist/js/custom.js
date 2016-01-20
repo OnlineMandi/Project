@@ -29,28 +29,45 @@ $(document).ready(function(){
             nextText: '',
             prevText: ''
         });
-        $('.bxslider-sellers').bxSlider({
-            minSlides: 1,
-            maxSlides: 4,
-            moveSlides:1,
-            slideWidth: 262,
-            slideMargin: 30,
-            auto: true,
-            autoControls: true,
-            pager:false
-        });
-        $('.bxslider-sellers-sd').bxSlider({
-             minSlides: 1,
-             maxSlides: 4,
-             moveSlides:1,
-             slideWidth: 262,
-             slideMargin: 30,
-             auto: true,
-             autoControls: true,
-             pager:false
-         });
 
-         var winwid = $(window).width();
+
+        function runSlider(val){
+            $('.bxslider-sellers').bxSlider({
+                minSlides: 1,
+                maxSlides: val,
+                moveSlides:1,
+                slideWidth: 262,
+                slideMargin: 30,
+                auto: true,
+                autoControls: true,
+                pager:false
+            });
+            $('.bxslider-sellers-sd').bxSlider({
+                 minSlides: 1,
+                 maxSlides: val,
+                 moveSlides:1,
+                 slideWidth: 262,
+                 slideMargin: 30,
+                 auto: true,
+                 autoControls: true,
+                 pager:false
+             });
+        }
+
+        var winwid = $(window).width();
+
+        if(winwid<591)
+        {
+            runSlider(1);
+        }
+        else if(winwid<768){
+            runSlider(2);
+        }
+        else{
+            runSlider(4);
+        }
+
+
 
          if(winwid<320){
 
