@@ -595,6 +595,7 @@ a:hover {
 }
 ul {
   list-style-type: none;
+  padding: 0;
 }
 .landing-full-box {
   background: #010D19 url("../images/landing-bg.jpg") repeat scroll center center / cover;
@@ -1208,6 +1209,44 @@ svg {
   font-size: 21px;
   padding: 6px 6px 7px;
 }
+.bg {
+  background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+  display: none;
+}
+.mobi-menu {
+  display: none;
+  background: #fff none repeat scroll 0 0;
+  bottom: 0;
+  box-shadow: 0 0 5px #a5a5a5;
+  left: -240px;
+  padding-top: 57px;
+  position: fixed;
+  top: 0;
+  width: 236px;
+  z-index: 10000;
+}
+.mobi-menu ul {
+  color: blue;
+}
+.mobi-menu ul li {
+  color: red;
+}
+.mobi-menu ul li.active {
+  background: #e9e9e9 none repeat scroll 0 0;
+}
+.mobi-menu ul li a {
+  color: #000;
+  display: inline-block;
+  font-family: lato;
+  font-size: 14px;
+  padding: 9px 15px;
+  width: 100%;
+}
 /* Small devices (Mobile, 320px and 668) */
 @media only screen and (min-width: 0px) and (max-width: 359px) {
   .landing-menu {
@@ -1284,6 +1323,14 @@ svg {
   .footer img {
     width: 140px;
   }
+  .navbar-box {
+    display: none;
+  }
+  .cart-btn-mobi,
+  .cart-btn-mobi,
+  .mobi-menu {
+    display: block;
+  }
 }
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .product-list ul li {
@@ -1343,6 +1390,10 @@ svg {
   }
   .product-list ul li {
     width: 33%;
+  }
+  .cart-btn-mobi,
+  .cart-btn-mobi {
+    display: none;
   }
 }
 /* Medium devices (desktops, 992px and up) */

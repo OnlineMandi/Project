@@ -68,21 +68,33 @@ $(document).ready(function(){
         }
 
 
+         if(winwid<768){
 
-         if(winwid<320){
-
-             $(".main-ul").click(function(event){
-
+             $(".navbar-toggle").click(function(event){
                  var target = $( event.target );
-                 if ( target.is( "li" ) && target.children(".sub-menu").is(":visible")) {
-                     target.children(".sub-menu").stop(true,false).fadeOut().css("top","150%");
-                 }
 
+                if(target.is(".collapsed"))
+                {
+                    $(".mobi-menu").animate({
+                        left:0
+                    },400);
+                    $(".bg").fadeIn();
+                }
                  else{
-                     $(".main-ul>li").children(".sub-menu").hide().css("top","150%");
-                     target.children(".sub-menu").stop(true,false).fadeIn().css("top","100%");
-                 }
+                    $(".mobi-menu").animate({
+                        left:"-240px"
+                    },400);
+                    $(".bg").fadeOut();
+                }
 
+
+             });
+             $(".bg").click(function(){
+                 $(this).fadeOut();
+                 $(".mobi-menu").animate({
+                     left:"-240px"
+                 },400);
+                 $(".navbar-toggle").addClass("collapsed");
              });
          }
          else{
