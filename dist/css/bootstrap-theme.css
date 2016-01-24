@@ -1349,7 +1349,8 @@ svg {
   }
   .cart-btn-mobi,
   .cart-btn-mobi,
-  .mobi-menu {
+  .mobi-menu,
+  .sub-menu-mobi {
     display: block;
   }
   .search-box {
@@ -1417,6 +1418,9 @@ svg {
   }
   .cart-btn-mobi,
   .cart-btn-mobi {
+    display: none;
+  }
+  .sub-menu-mobi {
     display: none;
   }
 }

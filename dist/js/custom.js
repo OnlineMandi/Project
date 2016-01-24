@@ -107,8 +107,15 @@ $(document).ready(function(){
                          target.parents("ul").find("a.main-li i").removeClass("fa-minus");
                      }
                      target.parent().children("ul").slideToggle();
+                    if(target.children("i").hasClass("fa-plus")){
+                        target.children("i").removeClass("fa-plus");
+                        target.children("i").addClass("fa-minus");
+                    }
+                     else{
+                        target.children("i").addClass("fa-plus");
+                        target.children("i").removeClass("fa-minus");
+                    }
 
-                     target.children("i").addClass("fa-p");
 
                      //target.parents("ul").find("a.main-li i").addClass("fa-plus");
                      //target.children("i").addClass("fa-p");
