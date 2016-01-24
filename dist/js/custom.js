@@ -96,6 +96,29 @@ $(document).ready(function(){
                  },400);
                  $(".navbar-toggle").addClass("collapsed");
              });
+
+             function handler( event ) {
+                 var target = $(event.target);
+                 if (target.is("a.main-li")) {
+                     if(!target.parent().children("ul").is(":visible"))
+                     {
+                         target.parents("ul").find("ul").slideUp();
+                         target.parents("ul").find("a.main-li i").addClass("fa-plus");
+                         target.parents("ul").find("a.main-li i").removeClass("fa-minus");
+                     }
+                     target.parent().children("ul").slideToggle();
+
+                     target.children("i").addClass("fa-p");
+
+                     //target.parents("ul").find("a.main-li i").addClass("fa-plus");
+                     //target.children("i").addClass("fa-p");
+
+
+                 }
+             }
+             $(".sub-menu-mobi").click(handler);
+
+
          }
          else{
              $(".main-ul>li").hover(function(){
