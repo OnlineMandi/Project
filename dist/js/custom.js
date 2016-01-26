@@ -9,16 +9,69 @@ $(document).ready(function(){
                 min: 0,
                 max: 900,
                 range: true,
-                value: [35, 860]
+                value: [0, 900]
+            });
+            $("#ex12c").on("slide", function(slideEvt) {
+                $("#ex12c-val").text("Price: Rs." + slideEvt.value[0] + " - Rs."+ slideEvt.value[1]);
+            });
+        }
+        if($("#ex12d").length){
+
+            $("#ex12d").slider({
+                id: "slider12d",
+                min: 1,
+                max: 34,
+                range: true,
+                value: [1, 34]
+            });
+            $("#ex12d").on("slide", function(slideEvt) {
+                $("#ex12d-val").text("Range: " + slideEvt.value[0] + " - "+ slideEvt.value[1]);
+            });
+        }
+        if($("#ex12e").length){
+
+            $("#ex12e").slider({
+                id: "slider12e",
+                min: 1,
+                max: 36,
+                range: true,
+                value: [1, 36]
+            });
+            $("#ex12e").on("slide", function(slideEvt) {
+                $("#ex12e-val").text("Range: " + slideEvt.value[0] + " - "+ slideEvt.value[1]);
+            });
+        }
+        if($("#ex12f").length){
+
+            $("#ex12f").slider({
+                id: "slider12f",
+                min: 1,
+                max: 35,
+                range: true,
+                value: [1, 35]
+            });
+            $("#ex12f").on("slide", function(slideEvt) {
+                $("#ex12f-val").text("Range: " + slideEvt.value[0] + " - "+ slideEvt.value[1]);
+            });
+        }
+        if($("#ex12g").length){
+
+            $("#ex12g").slider({
+                id: "slider12g",
+                min: 1,
+                max: 35,
+                range: true,
+                value: [1, 35]
+            });
+            $("#ex12g").on("slide", function(slideEvt) {
+                $("#ex12g-val").text("Range: " + slideEvt.value[0] + " - "+ slideEvt.value[1]);
             });
         }
 
 
-        $("#ex12c").on("slide", function(slideEvt) {
-            $("#ex12c-val").text("Price: Rs." + slideEvt.value[0] + " -- Rs."+ slideEvt.value[1]);
 
 
-        });
+
 
        $("body").on("mouseover","text.headline,text.headline1",function(){
            $(this).css("fill","url('#mypattern1') none");
