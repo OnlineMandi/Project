@@ -18,7 +18,9 @@
 .product-item .pro-item-head,
 .product-item .pro-item-img,
 .product-item .ftp,
-.footer {
+.footer,
+.sub-page-header,
+.wt-full-box {
   width: 100%;
   float: left;
 }
@@ -1266,6 +1268,77 @@ svg {
 .sub-menu-mobi ul li ul li a {
   padding: 8px 16px;
   text-transform: capitalize;
+}
+.sub-page-header {
+  background: #e4e4e4 url("../images/hd-dresses.jpg") no-repeat scroll right 0;
+  padding: 18px 0;
+}
+.sub-page-header h1 {
+  color: #000;
+  font-family: open sans;
+  font-size: 26px;
+  font-weight: 700;
+}
+.sub-page-header .breadcrumb > li + li::before {
+  color: #3a3a3a;
+  content: "/ ";
+}
+.sub-page-header ol {
+  background: transparent none repeat scroll 0 0;
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 0;
+}
+.sub-page-header ol li {
+  color: #000;
+  font-family: lato;
+  font-weight: 600;
+}
+.sub-page-header ol li a {
+  color: #000;
+}
+.wt-full-box {
+  padding: 30px 0;
+}
+.left-bar {
+  background: #f3f3f3 none repeat scroll 0 0;
+  padding: 11px 16px;
+  margin-bottom: 20px;
+}
+.left-bar.drk {
+  background: #646464 none repeat scroll 0 0;
+}
+.left-bar.drk h3 {
+  border: medium none;
+  color: #fff;
+  position: relative;
+}
+.left-bar.drk h3::before {
+  background: #fff none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 2px;
+  position: absolute;
+  width: 78px;
+}
+.left-bar h3 {
+  border-bottom: 1px solid #d6d6d6;
+  color: #000;
+  font-family: lato;
+  font-size: 20px;
+  margin: 3px 0 12px;
+  padding-bottom: 10px;
+}
+.left-bar ul li a {
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 5px;
+  padding: 2px 0;
+  width: 100%;
+}
+.left-bar ul li a i {
+  margin-right: 10px;
 }
 /* Small devices (Mobile, 320px and 668) */
 @media only screen and (min-width: 0px) and (max-width: 359px) {

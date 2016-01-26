@@ -1106,6 +1106,82 @@ svg {
     }
   }
 }
+.sub-page-header
+{
+  &:extend(.block);
+  background: #e4e4e4 url("../images/hd-dresses.jpg") no-repeat scroll right 0;
+  padding: 18px 0;
+  h1{
+    color: #000;
+    font-family: open sans;
+    font-size: 26px;
+    font-weight: 700;
+  }
+  .breadcrumb > li + li::before {
+    color: #3a3a3a;
+    content: "/ ";
+  }
+  ol{
+    background: transparent none repeat scroll 0 0;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 0;
+    li{
+      color: #000;
+      font-family: lato;
+      font-weight: 600;
+      a{
+        color: #000;
+      }
+    }
+  }
+}
+.wt-full-box
+{
+  &:extend(.block);
+  padding: 30px 0;
+}
+
+.left-bar {
+  background: #f3f3f3 none repeat scroll 0 0;
+  padding: 11px 16px;
+  margin-bottom: 20px;
+  &.drk{
+    background: #646464 none repeat scroll 0 0;
+    h3 {
+      border: medium none;
+      color: #fff;
+      position: relative;
+      &::before {
+        background: #fff none repeat scroll 0 0;
+        bottom: 0;
+        content: "";
+        height: 2px;
+        left: 2px;
+        position: absolute;
+        width: 78px;
+      }
+    }
+  }
+  h3 {
+    border-bottom: 1px solid #d6d6d6;
+    color: #000;
+    font-family: lato;
+    font-size: 20px;
+    margin: 3px 0 12px;
+    padding-bottom: 10px;
+  }
+  ul li a {
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 5px;
+    padding: 2px 0;
+    width: 100%;
+    i {
+      margin-right: 10px;
+    }
+  }
+}
 
 
 
