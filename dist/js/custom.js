@@ -2,13 +2,18 @@
 
 $(document).ready(function(){
 
-       $("#ex12c").slider({
-           id: "slider12c",
-           min: 0,
-           max: 900,
-           range: true,
-           value: [300, 700]
-       });
+        if($("#ex12c").length){
+
+            $("#ex12c").slider({
+                id: "slider12c",
+                min: 0,
+                max: 900,
+                range: true,
+                value: [35, 860]
+            });
+        }
+
+
         $("#ex12c").on("slide", function(slideEvt) {
             $("#ex12c-val").text("Price: Rs." + slideEvt.value[0] + " -- Rs."+ slideEvt.value[1]);
 

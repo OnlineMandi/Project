@@ -1143,7 +1143,7 @@ svg {
 }
 
 .left-bar {
-  background: #f3f3f3 none repeat scroll 0 0;
+  background: #f8f8f8 none repeat scroll 0 0;
   padding: 11px 16px;
   margin-bottom: 20px;
   &.drk{
@@ -1187,6 +1187,30 @@ svg {
     font-size: 13px;
     font-weight: 600;
     margin-top: 8px;
+  }
+  fieldset{
+    margin-bottom: 4px;
+  }
+  fieldset label{
+    cursor: pointer;
+    font-weight: 500;
+    width: 100%;
+  }
+  fieldset input[type="checkbox"] {
+    display:none;
+  }
+  fieldset input[type="checkbox"] + label span {
+    background: rgba(0, 0, 0, 0) url("../images/icons/check.png") no-repeat scroll left top / 20px auto;
+    cursor: pointer;
+    display: inline-block;
+    height: 20px;
+    margin-right: 9px;
+    vertical-align: middle;
+    width: 20px;
+  }
+
+  fieldset input[type="checkbox"]:checked + label span {
+    background: rgba(0, 0, 0, 0) url("../images/icons/check-active.png") no-repeat scroll left top / 20px auto;
   }
 
 }
