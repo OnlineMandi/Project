@@ -10,6 +10,8 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <link href="css/bootstrap-slider.css" rel="stylesheet">
+
     <link href="css/fonts.css" rel="stylesheet">
 
     <link href="css/font-icons.css" rel="stylesheet">
@@ -21,12 +23,7 @@
 
     <link href="css/jquery.bxslider.css" rel="stylesheet">
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery.min.js"></script>
 
-    <script src="js/jquery.bxslider.min.js"></script>
-
-    <script src="js/custom.js"></script>
 
 
     <!--page css and js-->
@@ -381,7 +378,7 @@
     <div class="wt-full-box">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-3" style="padding-right:0;">
                     <div class="left-bar drk">
                         <h3>Product Categories</h3>
                         <ul>
@@ -398,10 +395,12 @@
                         </ul>
                     </div>
                     <div class="left-bar">
-
+                        <h3>Filters</h3>
+                        <input id="ex12c" type="text"/ data-slider-tooltip="hide">
+                        <span class="showval" id="ex12c-val">Price: Rs.172 -- Rs.843</span>
                     </div>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-9">
 
                 </div>
             </div>
@@ -431,9 +430,15 @@
         <span>Closera &copy; 2014 </span>
     </footer>
 <!--page js and css-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 
+<script src="js/jquery.min.js"></script>
 
+<script src="js/bootstrap-slider.min.js"></script>
 
+<script src="js/jquery.bxslider.min.js"></script>
+
+<script src="js/custom.js"></script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>

@@ -2,6 +2,19 @@
 
 $(document).ready(function(){
 
+       $("#ex12c").slider({
+           id: "slider12c",
+           min: 0,
+           max: 900,
+           range: true,
+           value: [300, 700]
+       });
+        $("#ex12c").on("slide", function(slideEvt) {
+            $("#ex12c-val").text("Price: Rs." + slideEvt.value[0] + " -- Rs."+ slideEvt.value[1]);
+
+
+        });
+
        $("body").on("mouseover","text.headline,text.headline1",function(){
            $(this).css("fill","url('#mypattern1') none");
        });

@@ -1340,6 +1340,13 @@ svg {
 .left-bar ul li a i {
   margin-right: 10px;
 }
+.left-bar span.showval {
+  color: #777777;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 8px;
+}
 /* Small devices (Mobile, 320px and 668) */
 @media only screen and (min-width: 0px) and (max-width: 359px) {
   .landing-menu {
