@@ -1311,6 +1311,7 @@ svg {
 .left-bar.drk h3 {
   border: medium none;
   color: #fff;
+  margin: 3px 0 12px;
   position: relative;
 }
 .left-bar.drk h3::before {
@@ -1327,9 +1328,19 @@ svg {
   color: #606060;
   font-size: 17px;
   font-weight: 600;
-  margin: 3px 0 12px;
+  margin: 3px 0 0px;
   padding-bottom: 10px;
   text-transform: capitalize;
+  cursor: pointer;
+}
+.left-bar h3 i {
+  color: #8a8a8a;
+  float: right;
+  font-size: 14px;
+  margin: 2px;
+}
+.left-bar > div {
+  margin-top: 13px;
 }
 .left-bar ul li a {
   color: #fff;
@@ -1371,6 +1382,29 @@ svg {
 }
 .left-bar fieldset input[type="checkbox"]:checked + label span {
   background: rgba(0, 0, 0, 0) url("../images/icons/check-active.png") no-repeat scroll left top / 19px auto;
+}
+.subpage-filters {
+  background: #f6f6f6 none repeat scroll 0 0;
+  display: inline-block;
+  margin-bottom: 6px;
+  padding: 7px 9px;
+  width: 100%;
+}
+.subpage-filters span {
+  float: left;
+  margin: 5px 10px 0 0;
+}
+.subpage-filters div {
+  float: right;
+}
+.subpage-filters div select {
+  -moz-appearance: none;
+  border: 1px solid #e7e7e7;
+  padding: 0px 6px;
+  width: 170px;
+}
+.subpage-filters div select option {
+  padding: 4px 7px;
 }
 /* Small devices (Mobile, 320px and 668) */
 @media only screen and (min-width: 0px) and (max-width: 359px) {

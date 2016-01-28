@@ -1151,6 +1151,7 @@ svg {
     h3 {
       border: medium none;
       color: #fff;
+      margin: 3px 0 12px;
       position: relative;
       &::before {
         background: #fff none repeat scroll 0 0;
@@ -1168,10 +1169,22 @@ svg {
     color: #606060;
     font-size: 17px;
     font-weight: 600;
-    margin: 3px 0 12px;
+    margin: 3px 0 0px;
     padding-bottom: 10px;
     text-transform: capitalize;
+    cursor: pointer;
+
+    i{
+      color: #8a8a8a;
+      float: right;
+      font-size: 14px;
+      margin: 2px;
+    }
   }
+  &>div{
+    margin-top: 13px;
+  }
+
   ul li a {
     color: #fff;
     display: inline-block;
@@ -1217,6 +1230,30 @@ svg {
 
 }
 
+.subpage-filters
+{
+  background: #f6f6f6 none repeat scroll 0 0;
+  display: inline-block;
+  margin-bottom: 6px;
+  padding: 7px 9px;
+  width: 100%;
+  span{
+    float: left;
+    margin: 5px 10px 0 0;
+  }
+  div{
+    float: right;
+    select{
+      -moz-appearance: none;
+      border: 1px solid #e7e7e7;
+      padding: 0px 6px;
+      width: 170px;
+      option{
+        padding: 4px 7px;
+      }
+    }
+  }
+}
 
 
 
