@@ -20,12 +20,15 @@
 .product-item .ftp,
 .footer,
 .sub-page-header,
-.wt-full-box {
+.wt-full-box,
+.subProList,
+.image-box {
   width: 100%;
   float: left;
 }
 .transition,
-.social-icons a {
+.social-icons a,
+.btn-list {
   -o-transition: all 0.3s ease 0s;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -1399,12 +1402,62 @@ svg {
 }
 .subpage-filters div select {
   -moz-appearance: none;
+  background: #fff url("../images/down.png") no-repeat scroll right center / 10px auto content-box border-box;
   border: 1px solid #e7e7e7;
-  padding: 0px 6px;
+  padding: 0 6px;
   width: 170px;
 }
 .subpage-filters div select option {
   padding: 4px 7px;
+}
+.subProList ul {
+  margin: 7px -8px 0;
+}
+.subProList ul li {
+  display: inline-block;
+  padding: 0 8px;
+  width: 33%;
+}
+.image-box {
+  border: 1px solid #e9e9e9;
+  height: 340px;
+  overflow: hidden;
+  padding: 4px 5px;
+  position: relative;
+}
+.image-box img {
+  width: 100%;
+}
+.image-box:before {
+  background: #fff none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 4px;
+  position: absolute;
+  width: 100%;
+}
+.image-box:hover .btn-list {
+  bottom: 0;
+}
+.btn-list {
+  background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+  bottom: -42px;
+  height: 40px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+.btn-list a {
+  border-right: 1px solid #aaaaaa;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  padding: 8px 0;
+  text-align: center;
+  width: 32.3%;
+}
+.btn-list a:last-child {
+  border-right: 0 solid #aaaaaa;
 }
 /* Small devices (Mobile, 320px and 668) */
 @media only screen and (min-width: 0px) and (max-width: 359px) {
