@@ -1264,6 +1264,11 @@ svg {
        display: inline-block;
        padding: 0 8px;
        width: 33%;
+       &:hover{
+         .btn-list{
+           bottom: 0;
+         }
+       }
      }
   }
 }
@@ -1286,9 +1291,7 @@ svg {
     position: absolute;
     width: 100%;
   }
-  &:hover .btn-list{
-    bottom: 0;
-  }
+
 }
 
 .btn-list
@@ -1311,6 +1314,35 @@ svg {
     &:last-child{
       border-right: 0 solid #aaaaaa;
     }
+  }
+}
+.subProItem{
+  &:extend(.block);
+  margin-bottom: 24px;
+  text-align: center;
+  h3{
+    color: #919191;
+    font-size: 19px;
+    margin: 11px 0;
+  }
+  h5{
+    color: #454545;
+    font-size: 13px;
+    margin: 4px 0;
+  }
+  span{
+    color: #da2c2a;
+    font-size: 15px;
+    font-weight: 600;
+    del{
+      color: #b9b9b9;
+      margin-right: 7px;
+    }
+  }
+  p{
+    color: #bababa;
+    font-size: 12px;
+    margin-top: 3px;
   }
 }
 
@@ -1419,8 +1451,11 @@ svg {
   .search-box{
     padding: 18px 0;
   }
-
 }
+
+
+
+
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .product-list ul li {
     width: 50%;
@@ -1486,7 +1521,15 @@ svg {
   {
     display: none;
   }
-
+  .subProList ul li {
+    width: 32.9%;
+  }
+  .btn-list a {
+    width: 32.1%;
+  }
+  .image-box {
+    height: 292px;
+  }
 }
 
 
@@ -1545,6 +1588,15 @@ svg {
   .product-list ul li {
     width: 25%;
   }
+  .subProList ul li {
+    width: 32.9%;
+  }
+  .btn-list a {
+    width: 32.1%;
+  }
+  .image-box {
+    height: 292px;
+  }
 }
 
 
@@ -1585,6 +1637,14 @@ svg {
   .sub-menu {
     width: 170%;
   }
-
+  .subProList ul li {
+    width: 33%;
+  }
+  .btn-list a {
+    width: 32.3%;
+  }
+  .image-box {
+    height: 340px;
+  }
 }
 
