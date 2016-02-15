@@ -22,7 +22,9 @@
 .wt-full-box,
 .subProList,
 .image-box,
-.subProItem {
+.subProItem,
+.admin-display-header,
+.admin-display-box {
   width: 100%;
   float: left;
 }
@@ -1393,10 +1395,12 @@ svg {
   width: 100%;
   font-size: 13px;
 }
-.left-bar fieldset input[type="checkbox"] {
+.left-bar fieldset input[type="checkbox"],
+.admin-form .form-group input[type="checkbox"] {
   display: none;
 }
-.left-bar fieldset input[type="checkbox"] + label span {
+.left-bar fieldset input[type="checkbox"] + label span,
+.admin-form .form-group input[type="checkbox"] + label span {
   background: rgba(0, 0, 0, 0) url("../images/icons/check.png") no-repeat scroll left top / 19px auto;
   cursor: pointer;
   display: inline-block;
@@ -1405,7 +1409,8 @@ svg {
   vertical-align: middle;
   width: 19px;
 }
-.left-bar fieldset input[type="checkbox"]:checked + label span {
+.left-bar fieldset input[type="checkbox"]:checked + label span,
+.admin-form .form-group input[type="checkbox"]:checked + label span {
   background: rgba(0, 0, 0, 0) url("../images/icons/check-active.png") no-repeat scroll left top / 19px auto;
 }
 .subpage-filters {
@@ -1545,6 +1550,134 @@ svg {
   color: #4f4f4f;
   font-weight: 500;
   text-transform: capitalize;
+}
+.admin-profile-box {
+  background: #646464 none repeat scroll 0 0;
+  padding: 22px 0;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.admin-profile-box h4 {
+  color: #fff;
+  margin-bottom: 4px;
+}
+.admin-profile-box span {
+  color: #bfbfbf;
+}
+.profile-img-box {
+  background: transparent none repeat scroll 0 0;
+  border: 2px solid #e6e6e6;
+  border-radius: 60px;
+  display: inline-block;
+  height: 120px;
+  overflow: hidden;
+  width: 120px;
+}
+.profile-img-box img {
+  color: red;
+  height: 100%;
+  text-align: center;
+}
+.admin-menu-list {
+  background: #f8f8f8 none repeat scroll 0 0;
+  width: 100%;
+}
+.admin-menu-list a {
+  border-bottom: 1px solid #eaeaea;
+  color: #5a5a5a;
+  display: inline-block;
+  padding: 11px 16px;
+  text-transform: capitalize;
+  width: 100%;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.admin-menu-list a:hover {
+  background: #646464 none repeat scroll 0 0;
+  color: #fff;
+}
+.admin-menu-list a i {
+  margin-right: 3px;
+}
+.head2-admin {
+  font-size: 20px;
+  font-weight: 600;
+}
+.admin-display-header h4 {
+  color: #000;
+  float: left;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.admin-display-header a {
+  background: #000 none repeat scroll 0 0;
+  color: #fff;
+  float: right;
+  font-weight: 600;
+  padding: 5px 16px;
+  text-transform: uppercase;
+}
+.admin-display-box {
+  border: 1px solid #d1d1d1;
+  margin-bottom: 36px;
+  padding: 20px;
+}
+.admin-list {
+  margin-bottom: 10px;
+}
+.admin-list p {
+  color: #555555;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+.admin-list p span {
+  color: #333;
+  display: inline-block;
+  font-weight: 600;
+  width: 200px;
+}
+.admin-form {
+  display: block;
+}
+.admin-form .form-group label {
+  font-weight: 600;
+  font-size: 13px;
+}
+.admin-form .form-group label span {
+  margin-right: 5px !important;
+  margin-top: -2px;
+}
+.admin-form .form-group input,
+.admin-form .form-group select {
+  border: 1px solid #d3d3d3;
+  border-radius: 0;
+  box-shadow: 0 0 0;
+  color: #8c8c8c;
+  height: 38px;
+}
+.admin-form .form-group input:focus,
+.admin-form .form-group select:focus {
+  border-color: #DA2C2A;
+  color: #333;
+}
+.admin-form .form-group select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  background: transparent url("../images/icons/arrow-down.png") no-repeat scroll right center / 12px auto content-box border-box;
+  padding-right: 8px;
+}
+.btn-theme {
+  background: #da2c2a;
+  border-radius: 0;
+  color: #fff;
+  padding: 8px 19px;
+}
+.btn-theme:hover {
+  background-color: #ca1c1a;
+  color: #fff;
 }
 /* Small devices (Mobile, 320px and 668) */
 @media only screen and (min-width: 0px) and (max-width: 359px) {
