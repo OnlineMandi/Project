@@ -66,7 +66,18 @@ $(document).ready(function(){
                 $("#ex12g-val").text("Range: " + slideEvt.value[0] + " - "+ slideEvt.value[1]);
             });
         }
+        if($("#ex12h").length){
 
+            $("#ex12h").slider({
+                id: "slider12h",
+                min: 1,
+                max: 35
+            });
+            $("#ex12h").on("slide", function(slideEvt) {
+                $("#ex12h-val").text("Range: " + slideEvt.value);
+            });
+
+        }
 
 
 

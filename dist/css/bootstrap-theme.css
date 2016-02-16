@@ -1649,7 +1649,8 @@ svg {
   margin-top: -2px;
 }
 .admin-form .form-group input,
-.admin-form .form-group select {
+.admin-form .form-group select,
+.admin-form .form-group textarea {
   border: 1px solid #d3d3d3;
   border-radius: 0;
   box-shadow: 0 0 0;
@@ -1657,7 +1658,8 @@ svg {
   height: 38px;
 }
 .admin-form .form-group input:focus,
-.admin-form .form-group select:focus {
+.admin-form .form-group select:focus,
+.admin-form .form-group textarea:focus {
   border-color: #DA2C2A;
   color: #333;
 }
@@ -1669,6 +1671,9 @@ svg {
   background: transparent url("../images/icons/arrow-down.png") no-repeat scroll right center / 12px auto content-box border-box;
   padding-right: 8px;
 }
+.admin-form .form-group textarea {
+  height: 120px;
+}
 .btn-theme {
   background: #da2c2a;
   border-radius: 0;
@@ -1678,6 +1683,20 @@ svg {
 .btn-theme:hover {
   background-color: #ca1c1a;
   color: #fff;
+}
+.sm-input .form-group input,
+.sm-input .form-group select {
+  height: 34px;
+}
+.img-box1 {
+  background: #f3f3f3 none repeat scroll 0 0;
+  height: 428px;
+  width: 100%;
+}
+.head4-borderd {
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 14px;
+  padding-bottom: 8px;
 }
 /* Small devices (Mobile, 320px and 668) */
 @media only screen and (min-width: 0px) and (max-width: 359px) {
