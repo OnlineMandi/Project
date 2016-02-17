@@ -66,6 +66,8 @@ $(document).ready(function(){
                 $("#ex12g-val").text("Range: " + slideEvt.value[0] + " - "+ slideEvt.value[1]);
             });
         }
+
+
         if($("#ex12h").length){
 
             $("#ex12h").slider({
@@ -74,7 +76,55 @@ $(document).ready(function(){
                 max: 35
             });
             $("#ex12h").on("slide", function(slideEvt) {
-                $("#ex12h-val").text("Range: " + slideEvt.value);
+                $("#ex12h-val").text(slideEvt.value);
+            });
+
+        }
+        if($("#ex12i").length){
+
+            $("#ex12i").slider({
+                id: "slider12i",
+                min: 1,
+                max: 35
+            });
+            $("#ex12i").on("slide", function(slideEvt) {
+                $("#ex12i-val").text(slideEvt.value);
+            });
+
+        }
+        if($("#ex12j").length){
+
+            $("#ex12j").slider({
+                id: "slider12j",
+                min: 1,
+                max: 35
+            });
+            $("#ex12j").on("slide", function(slideEvt) {
+                $("#ex12j-val").text(slideEvt.value);
+            });
+
+        }
+        if($("#ex12k").length){
+
+            $("#ex12k").slider({
+                id: "slider12k",
+                min: 1,
+                max: 35
+            });
+            $("#ex12k").on("slide", function(slideEvt) {
+                $("#ex12k-val").text(slideEvt.value);
+            });
+
+        }
+        if($("#ex12l").length){
+
+            $("#ex12l").slider({
+                id: "slider12l",
+                min: 1,
+                max: 35
+            });
+            $("#ex12l").on("slide", function(slideEvt) {
+                $("#ex12l-val").text(slideEvt.value);
             });
 
         }
@@ -82,8 +132,7 @@ $(document).ready(function(){
 
 
 
-
-       $("body").on("mouseover","text.headline,text.headline1",function(){
+    $("body").on("mouseover","text.headline,text.headline1",function(){
            $(this).css("fill","url('#mypattern1') none");
        });
        $("body").on("mouseout","text.headline,text.headline1",function(){
