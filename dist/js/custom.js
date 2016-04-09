@@ -295,6 +295,27 @@ $(document).ready(function(){
             $(".sub-menu-women>.right-list>div:eq('"+index+"')").fadeIn();
         });
 
+        $(".decrease").click(function(){
+            var value = $("#range").val();
+            value--;
+            if(value<1){
+                return;
+            }
+            $("#range").val(value);
+        });
+        $(".increase").click(function(){
+            var value = $("#range").val();
+            value++;
+            $("#range").val(value);
+        });
+
+        $(".product-tab-head a").on("click",function(){
+            $(".product-tab-head a").removeClass();
+            $(this).addClass("active");
+            var index = $(this).index();
+            $(".product-tab-body>div").hide();
+            $(".product-tab-body>div:eq('"+index+"')").fadeIn();
+        });
 
 });
 
