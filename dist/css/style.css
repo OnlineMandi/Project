@@ -1207,7 +1207,7 @@ svg {
 }
 .product-fullinfo .fullinfo-details h2 {
   color: #000;
-  font-size: 29px;
+  font-size: 27px;
   font-weight: 600;
   margin: 0;
 }
@@ -1240,7 +1240,6 @@ svg {
 }
 .product-fullinfo .fullinfo-details .product-range {
   float: left;
-  margin-right: 12px;
   padding: 12px 0;
 }
 .product-fullinfo .fullinfo-details .product-range span {
@@ -1343,6 +1342,9 @@ svg {
   display: none;
   padding: 20px 22px;
 }
+.product-tab .product-tab-body > div img {
+  max-width: 100%;
+}
 .product-tab .product-tab-body > div:first-child {
   display: block;
 }
@@ -1383,6 +1385,30 @@ svg {
 @media only screen and (min-width: 0px) and (max-width: 359px) {
   .landing-menu {
     margin-top: 23px;
+  }
+  .product-fullinfo .fullinfo-details h2 {
+    font-size: 22px;
+  }
+  .product-fullinfo .fullinfo-details h4 {
+    font-size: 14px;
+  }
+  .product-fullinfo .fullinfo-details .product-range button,
+  .product-tab .product-tab-body .reviews button {
+    padding: 9px 18px;
+  }
+  .product-fullinfo .fullinfo-imgview .zoom-section .zoom-small-image {
+    padding-left: 0;
+  }
+  .product-fullinfo .fullinfo-imgview .zoom-section .zoom-desc {
+    float: left;
+    position: relative;
+    width: 100%;
+  }
+  .product-fullinfo .fullinfo-imgview .zoom-section .zoom-desc a {
+    float: left;
+    margin-bottom: 0;
+    margin-right: 10px;
+    width: 17%;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -1468,6 +1494,16 @@ svg {
   .search-box {
     padding: 18px 0;
   }
+  .product-fullinfo .fullinfo-imgview {
+    margin-bottom: 20px;
+  }
+  .wt-full-box {
+    padding: 26px 0;
+  }
+  .product-tab .product-tab-head a {
+    font-size: 13px;
+    padding: 7px 20px;
+  }
 }
 .range-slide {
   margin-bottom: 12px;
@@ -1479,6 +1515,10 @@ svg {
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .product-list ul li {
     width: 50%;
+  }
+  .product-tab .product-tab-head a {
+    font-size: 13px;
+    padding: 4px 7px;
   }
 }
 /* Small devices (tablets, 768px and up) */
@@ -1551,6 +1591,12 @@ svg {
   .image-box {
     height: 292px;
   }
+  .product-fullinfo .fullinfo-details h2 {
+    font-size: 23px;
+  }
+  .product-fullinfo .fullinfo-details h4 {
+    font-size: 14px;
+  }
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -1616,6 +1662,9 @@ svg {
   .image-box {
     height: 292px;
   }
+  .product-fullinfo .fullinfo-details h2 {
+    font-size: 25px;
+  }
 }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
@@ -1661,5 +1710,11 @@ svg {
   }
   .image-box {
     height: 340px;
+  }
+  .product-fullinfo .fullinfo-details h2 {
+    font-size: 27px;
+  }
+  .product-fullinfo .fullinfo-details h4 {
+    font-size: 16px;
   }
 }

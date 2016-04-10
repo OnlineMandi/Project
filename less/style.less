@@ -1324,10 +1324,11 @@ svg {
     width:100%;
     h2{
       color: #000;
-      font-size: 29px;
+      font-size: 27px;
       font-weight: 600;
       margin: 0;
     }
+
     h4{
       color: #919191;
       font-size: 16px;
@@ -1357,7 +1358,6 @@ svg {
     }
     .product-range{
       float: left;
-      margin-right: 12px;
       padding: 12px 0;
       span{
         border: 1px solid #d8d8d8;
@@ -1460,6 +1460,9 @@ svg {
     &>div{
       display: none;
       padding: 20px 22px;
+      img{
+        max-width:100%;
+      }
       &:first-child{
         display:block;
       }
@@ -1503,6 +1506,7 @@ svg {
         width: 50%;;
       }
     }
+
   }
 }
 
@@ -1547,7 +1551,29 @@ svg {
   .landing-menu {
     margin-top: 23px;
   }
-
+  .product-fullinfo .fullinfo-details h2 {
+    font-size: 22px;
+  }
+  .product-fullinfo .fullinfo-details h4 {
+    font-size: 14px;
+  }
+  .product-fullinfo .fullinfo-details .product-range button{
+    padding: 9px 18px;
+  }
+  .product-fullinfo .fullinfo-imgview .zoom-section .zoom-small-image {
+   padding-left:0;
+  }
+  .product-fullinfo .fullinfo-imgview .zoom-section .zoom-desc {
+    float: left;
+    position: relative;
+    width: 100%;
+    a{
+        float: left;
+        margin-bottom: 0;
+        margin-right: 10px;
+        width: 17%;
+    }
+  }
 }
 
 
@@ -1638,7 +1664,18 @@ svg {
   .search-box{
     padding: 18px 0;
   }
+  .product-fullinfo .fullinfo-imgview {
+    margin-bottom: 20px;
+  }
+  .wt-full-box {
+    padding: 26px 0;
+  }
+  .product-tab .product-tab-head a {
+    font-size: 13px;
+    padding: 7px 20px;
+  }
 }
+
 .range-slide{
   margin-bottom:12px;
   .slider.slider-horizontal {
@@ -1653,6 +1690,10 @@ svg {
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .product-list ul li {
     width: 50%;
+  }
+  .product-tab .product-tab-head a {
+    font-size: 13px;
+    padding: 4px 7px;
   }
 }
 /* Small devices (tablets, 768px and up) */
@@ -1724,6 +1765,12 @@ svg {
   .image-box {
     height: 292px;
   }
+  .product-fullinfo .fullinfo-details h2 {
+    font-size: 23px;
+  }
+  .product-fullinfo .fullinfo-details h4 {
+    font-size: 14px;
+  }
 }
 
 
@@ -1791,6 +1838,9 @@ svg {
   .image-box {
     height: 292px;
   }
+  .product-fullinfo .fullinfo-details h2 {
+    font-size: 25px;
+  }
 }
 
 
@@ -1839,6 +1889,12 @@ svg {
   }
   .image-box {
     height: 340px;
+  }
+  .product-fullinfo .fullinfo-details h2 {
+    font-size: 27px;
+  }
+  .product-fullinfo .fullinfo-details h4 {
+    font-size: 16px;
   }
 }
 
