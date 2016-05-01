@@ -1,11 +1,6 @@
 .color {
   background: red;
 }
-.blockin,
-.single-righbar .saller-infolinks a {
-  width: 100%;
-  display: inline-block;
-}
 .block,
 .header,
 .full-search-box,
@@ -29,7 +24,7 @@
 .admin-display-header,
 .admin-display-box,
 .product-fullinfo,
-.single-righbar .latest-products {
+.product-fullinfo .fullinfo-details .social-links {
   width: 100%;
   float: left;
 }
@@ -38,7 +33,6 @@
 .btn-list,
 .product-fullinfo .fullinfo-details .product-range button,
 .product-fullinfo .fullinfo-details .links a,
-.single-righbar .latest-products a.more,
 .product-tab .product-tab-body .reviews button {
   -o-transition: all 0.3s ease 0s;
   -webkit-transition: all 0.3s ease 0s;
@@ -1303,17 +1297,37 @@ svg {
 .product-fullinfo .fullinfo-details .links a:hover {
   color: #000;
 }
-.product-fullinfo .fullinfo-details p {
-  color: #727272;
-  float: left;
-  font-size: 13px;
-  margin-bottom: 7px;
-  width: 100%;
+.product-fullinfo .fullinfo-details .social-links {
+  margin-bottom: 12px;
 }
-.product-fullinfo .fullinfo-details p b {
-  color: #535353;
-  font-weight: 600;
+.product-fullinfo .fullinfo-details .social-links a {
+  background: transparent url("../images/social.png") no-repeat scroll 0 center;
+  float: left;
+  height: 28px;
   margin-right: 6px;
+  width: 86px;
+}
+.product-fullinfo .fullinfo-details .social-links a.pin {
+  background-position: -202px center;
+  width: 80px;
+}
+.product-fullinfo .fullinfo-details .social-links a.fb {
+  background-position: 0 center;
+}
+.product-fullinfo .fullinfo-details .social-links a.tw {
+  background-position: -101px center;
+}
+.product-fullinfo .fullinfo-details .social-links a.gp {
+  background-position: -297px center;
+  width: 64px;
+}
+.product-fullinfo .fullinfo-details p {
+  border: 1px solid #dfdfdf;
+  color: #9b9b9b;
+  display: inline-block;
+  font-size: 13px;
+  padding: 5px 7px;
+  width: 100%;
 }
 .product-tab {
   margin-top: 22px;
@@ -1387,123 +1401,6 @@ svg {
   background: #f1f1f1 none repeat scroll 0 0;
   font-weight: 500;
   width: 50%;
-}
-.single-righbar {
-  width: 100%;
-}
-.single-righbar .profile {
-  background: red none repeat scroll 0 0;
-  border: 6px solid #cccccc;
-  border-radius: 50%;
-  overflow: hidden;
-  width: 100%;
-}
-.single-righbar .profile img {
-  width: 100%;
-}
-.single-righbar .lable {
-  display: inline-block;
-  font-size: 17px;
-  margin: 12px 0;
-  text-align: center;
-  text-transform: uppercase;
-  width: 100%;
-}
-.single-righbar .addfavo {
-  color: #9f9f9f;
-  display: table;
-  margin: 0 auto;
-}
-.single-righbar .addfavo i {
-  color: #da2c2a;
-  margin-right: 3px;
-}
-.single-righbar .saller-infolinks {
-  background: #f1f0f0 none repeat scroll 0 0;
-  margin-top: 18px;
-  padding: 14px;
-}
-.single-righbar .saller-infolinks a {
-  color: #3a3a3a;
-  margin-bottom: 9px;
-  padding: 2px 3px;
-  position: relative;
-}
-.single-righbar .saller-infolinks a:before {
-  background: #da2c2a none repeat scroll 0 0;
-  bottom: 2px;
-  content: "";
-  height: 1px;
-  position: absolute;
-  width: 38px;
-}
-.single-righbar .saller-infolinks a i {
-  background: #000 none repeat scroll 0 0;
-  color: #fff;
-  float: right;
-  font-size: 19px;
-  padding: 5px 11px;
-}
-.single-righbar .latest-products {
-  background: #f1f0f0 none repeat scroll 0 0;
-  padding: 12px 15px;
-}
-.single-righbar .latest-products a {
-  float: left;
-  margin-bottom: 16px;
-  margin-right: 4%;
-  width: 29%;
-}
-.single-righbar .latest-products a.more {
-  background: #da2c2a none repeat scroll 0 0;
-  color: #fff;
-  padding: 3px 12px;
-  width: initial;
-  margin-bottom: 12px;
-}
-.single-righbar .latest-products a.more:hover {
-  background: #000;
-}
-.single-righbar .latest-products a img {
-  border: 1px solid #aaa;
-  width: 100%;
-}
-.img-title {
-  background: #e7e7e7 none repeat scroll 0 0;
-  display: inline-block;
-  padding: 15px;
-}
-.img-title ul {
-  margin: 0;
-}
-.img-title ul li {
-  border-bottom: 1px solid #da2c2a;
-  display: inline-block;
-  margin-bottom: 7px;
-  position: relative;
-  width: 100%;
-}
-.img-title ul li:before {
-  background: #da2c2a none repeat scroll 0 0;
-  bottom: 0;
-  content: "";
-  height: 2px;
-  left: 0;
-  position: absolute;
-  width: 78px;
-}
-.img-title ul li .img-title-left {
-  float: left;
-  font-size: 15px;
-  padding: 14px 0 0;
-  text-transform: uppercase;
-  width: 70%;
-}
-.img-title ul li .img-title-left span {
-  color: #da2c2a;
-}
-.img-title ul li .cash-img {
-  float: right;
 }
 /* Small devices (Mobile, 320px and 668) */
 @media only screen and (min-width: 0px) and (max-width: 359px) {
