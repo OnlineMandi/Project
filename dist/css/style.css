@@ -925,6 +925,23 @@ svg {
   position: absolute;
   width: 100%;
 }
+.image-box span {
+  background: #DA2C2A none repeat scroll 0 0;
+  border-radius: 40px;
+  color: #fff;
+  font-family: cursive;
+  font-size: 10px;
+  height: 34px;
+  line-height: 1.2;
+  margin: 13px 15px;
+  padding: 5px 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  top: 0;
+  width: 34px;
+}
 .btn-list {
   background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
   bottom: -42px;
@@ -967,6 +984,9 @@ svg {
 .subProItem span del {
   color: #b9b9b9;
   margin-right: 7px;
+}
+.subProItem span i {
+  font-size: 13px;
 }
 .subProItem p {
   color: #bababa;
